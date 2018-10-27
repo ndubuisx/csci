@@ -3,7 +3,7 @@
  *  Emmanuel Ndubuisi
  *  CSCI 206 - 1L
  *  Lab 5 - LoopyNumbers.java
- *  October 11, 2018 
+ *  October 11, 2018
  
  
  *  Compilation:  javac LoopyNumbers.java
@@ -22,7 +22,6 @@ public class LoopyNumbers {
         int start = 0;
         // initialize end variable        
         int end = 0;
-        int test;
         // initialize increment variable
         int increment = 0;
 
