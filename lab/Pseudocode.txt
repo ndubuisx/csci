@@ -1,0 +1,217 @@
+/***************************
+ *
+ *  Emmanuel Ndubuisi
+ *  CSCI 206 - 1L
+ *  Lab 6 - Pseudocode.txt
+ *  October 18, 2018
+ *
+ **************************/
+
+///// LAB 1 - HelloWord /////
+
+Print "Hello, World"
+
+
+///// LAB 2 - Shapes /////
+
+Print "*********      ***        *          *"
+Go to new line
+Print "*       *    *     *     ***        * *"
+Go to new line
+Print "*       *   *       *   *****      *   *"
+Go to new line
+Print "*       *   *       *     *       *     *"
+Go to new line
+Print "*       *   *       *     *      *       *" 
+Go to new line
+Print "*       *   *       *     *       *     *" 
+Go to new line
+Print "*       *   *       *     *        *   *" 
+Go to new line
+Print "*       *    *     *      *         * *" 
+Go to new line
+Print "*********      ***        *          *"
+
+
+///// LAB 3 - LabAverage /////
+
+Set grade1 to 0
+
+    Set grade2 to 0
+
+        Set grade3 to 0
+
+            Set grade4 to 0
+
+                Set grade5 to 0
+
+                    Set lab_average to 0
+
+                        Set lab_grade to ""
+
+
+Print "What is your first grade? "
+
+    Prompt user for input. Set grade1 to inputted value
+
+        Print "What is your second grade? "
+
+            Prompt user for input. Set grade2 to inputted value
+
+                Print "What is your third grade? "
+
+                    Prompt user for input. Set grade3 to inputted value
+
+                        Print "What is your fourth grade? "
+
+                            Prompt user for input. Set grade4 to inputted value
+
+                                Print "What is your fifth grade? "
+
+                                    Prompt user for input. Set grade5 to inputted value
+
+
+Set lab_average to  ((grade1 + grade2 + grade3 + grade4 + grade5)/5)
+
+if lab_average is greater than 89
+    Set lab_grade to A
+else
+    if lab_average is greater than 84
+        Set lab_grade to B+
+    else
+        if lab_average is greater than 79
+            Set lab_grade to B
+        else
+            if lab_average is greater than 74
+                Set lab_grade to C+
+            else
+                if lab_average is greater than 69
+                    Set lab_grade to C
+                else
+                    if lab_average is greater than 64
+                        Set lab_grade to D+
+                    else
+                        if lab_average is greater than 59
+                            Set lab_grade to D
+                        else
+                            Set lab_grade to F
+
+Print "Your lab average is: " + lab_average
+
+Print "Your lab grade is: " + lab_grade
+
+
+///// LAB 4 - WhatTheIf /////
+
+****** Mountain Climber ******
+
+Set elevation to 0
+
+    Print "What is your elevation? "
+
+        Prompt user for input
+
+            Set elevation to user input
+
+if elevation is greater than 26000
+    Print "Death Zone!"
+else
+    if elevation is greater than 7000
+        Print "High!"
+    else 
+        Print "Meh, not that high!"
+
+****** Magic 8 Ball ******
+
+Set number to 0
+
+    Print "Now enter a number between 1 and 1000: "
+
+        Prompt user for input
+
+            Set number to user input
+
+if number is greater than 750
+    Print "Great!"
+else 
+    if number is greater than 500
+        Print "Good!"
+    else 
+        if number is greater than 250
+            Print "Average!"
+        else
+            Print "Poor!"
+
+****** Calculation ******
+
+Set yards to 0
+    
+    Set feet to 0
+
+        Set inches to 0
+
+            Print "Enter some number of yards: "
+
+                Prompt user for input
+
+                    Set yards to user input
+
+Set feet to (yards * 3)
+
+    Set inches to (yards * 36)
+
+        Print "This is equivalent to " + feet + " feet or " + inches + " inches."
+        
+
+///// LAB 5 - LoopyNumbers /////
+
+Set start to 0
+
+    Set end to 0
+
+        Set increment to 0
+
+Print "Please enter starting number: "
+
+    Prompt user for input
+
+        Set start to user input
+
+            Print "Please enter ending number: "
+
+                Prompt user for input 
+
+                    Set end to user input
+
+                        Print "Please enter increment number: "
+
+                            Prompt user for input   
+
+                                Set increment to user input
+
+while start is less than or equals to ending
+
+    if start MOD 2 == 0 
+
+        Print "The number " + start + " is even"
+
+    else
+        Print "The number " + start + " is odd"
+    
+    Set start to (start + increment)
+
+
+Print "Thanks for playing!"
+
+
+
+
+
+
+
+
+
+
+
+
+
