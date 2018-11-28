@@ -99,8 +99,8 @@ public class Statistics {
 
         // print the results
         System.out.printf("You entered: %.1f, %.1f, %.1f, %.1f, %.1f \n", num1, num2, num3, num4, num5);
-        System.out.print("The average of these numbers is: " + mean + "\n");
-        System.out.print("The standard deviation of these numbers is: " + std + "\n");
+        System.out.println("The average of these numbers is: " + mean);
+        System.out.println("The standard deviation of these numbers is: " + std);
     }
 
 }
