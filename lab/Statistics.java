@@ -14,10 +14,10 @@
 // import scanner class from the java.util package
 import java.util.Scanner; 
 
-// the Methods class contains the mean and std methods
-class Methods{
+public class Statistics {
+
     // mean method - returns the mean of five numbers
-    public double mean(double num1, double num2, double num3, double num4, double num5){
+    public static double mean(double num1, double num2, double num3, double num4, double num5){
         // initiliaze the sum variable
         // stores the sum of all the five numbers
         double sum = 0;
@@ -35,7 +35,7 @@ class Methods{
     }
 
     // std method - returns the std of the five numbers
-    public double std(double num1, double num2, double num3, double num4, double num5, double mean){
+    public static double std(double num1, double num2, double num3, double num4, double num5, double mean){
         // stores the standard deviation of the numbers
         double std = 0;
         // finds the sum of the square of all numbers minus the mean 
@@ -48,17 +48,11 @@ class Methods{
         // return the standard deviation
         return std;
     }
-}
-
-// this Statistics class contains the main method
-public class Statistics {
 
     // main method
     public static void main(String[] args) {
         // create scanner object to read input
         Scanner input = new Scanner(System.in);
-        // create an object of the Methods class
-        Methods meth = new Methods();
         
         // initiliaze input variables required for program
         double num1 = 0;
@@ -72,30 +66,30 @@ public class Statistics {
         double std = 0;
 
         // prompt user for input 
-        System.out.println("Please enter number 1: ");
+        System.out.print("Please enter number 1: ");
         // assign user input to num1
         num1 = input.nextDouble();
         // prompt user for input 
-        System.out.println("Please enter number 2: ");
+        System.out.print("Please enter number 2: ");
         // assign user input to num2
         num2 = input.nextDouble();
         // prompt user for input 
-        System.out.println("Please enter number 3: ");
+        System.out.print("Please enter number 3: ");
         // assign user input to num3
         num3 = input.nextDouble();
         // prompt user for input 
-        System.out.println("Please enter number 4: ");
+        System.out.print("Please enter number 4: ");
         // assign user input to num4
         num4 = input.nextDouble();
         // prompt user for input 
-        System.out.println("Please enter number 5: ");
+        System.out.print("Please enter number 5: ");
         // assign user input to num5
         num5 = input.nextDouble();
 
-        // invoke the mean method from the Methods class to find the mean of the inputs
-        mean = meth.mean(num1, num2, num3, num4, num5);
-        // invoke the std method from the Methods class to find the standard deviation of the inputs
-        std = meth.std(num1, num2, num3, num4, num5, mean);
+        // invoke the mean method to find the mean of the inputs
+        mean = mean(num1, num2, num3, num4, num5);
+        // invoke the std method to find the standard deviation of the inputs
+        std = std(num1, num2, num3, num4, num5, mean);
 
         // print the results
         System.out.printf("You entered: %.1f, %.1f, %.1f, %.1f, %.1f \n", num1, num2, num3, num4, num5);
