@@ -1,0 +1,22 @@
+Lab 1 - Take Average
+Write a program that calculates and prints the average of three integers that are given as user input. Write code in average.java.
+
+Example 1
+Input: 5 9 10
+
+Output:
+Enter first integer
+Enter second integer
+Enter third integer
+
+Average: 8
+
+Example 2
+Input: 2000 365 638
+
+Output:
+Enter first integer
+Enter second integer
+Enter third integer
+
+Average: 1001
