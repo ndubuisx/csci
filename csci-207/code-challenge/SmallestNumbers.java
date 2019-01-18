@@ -1,4 +1,4 @@
-// todo: add question and comment
+// todo: add question and comment 
 import java.util.Scanner;
 class SmallestNumbers {
   public static void main(String[] args) {
