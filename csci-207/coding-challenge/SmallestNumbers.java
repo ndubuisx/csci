@@ -1,4 +1,15 @@
-// todo: add question and comment
+/****************************************************************************** 
+ * Coding Challenge 1 - Smallest Integers
+ * 
+ * Determine the two smallest integers from a set of user input integers
+ * Author: Emmanuel Ndubuisi
+ * Date: January 17, 2019
+ * 
+ * Compilation:  javac SmallestNumbers.java
+ * Execution:    java SmallestNumbers
+ ******************************************************************************/
+
+// todo: add comment
 import java.util.Scanner;
 class SmallestNumbers {
   public static void main(String[] args) {
