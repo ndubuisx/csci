@@ -1,4 +1,3 @@
-<<<<<<< HEAD:csci-207/coding-challenge/SmallestNumbers.java
 /****************************************************************************** 
  * Coding Challenge 1 - Smallest Integers
  * 
@@ -11,9 +10,6 @@
  ******************************************************************************/
 
 // todo: add comment
-=======
-// todo: add question and comment 
->>>>>>> b57613ff8af0c7c3bf09e4f55edd03fc0026f323:csci-207/code-challenge/SmallestNumbers.java
 import java.util.Scanner;
 class SmallestNumbers {
   public static void main(String[] args) {
