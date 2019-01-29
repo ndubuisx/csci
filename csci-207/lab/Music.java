@@ -1,7 +1,7 @@
 /****************************************************************************** 
  * Lab 2 - Music
  * 
- * Prints random songs from array
+ * Prints random songs from array (no duplicates)
  * Author: Emmanuel Ndubuisi
  * Date: January 28, 2019
  * 
