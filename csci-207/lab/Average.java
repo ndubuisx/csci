@@ -12,7 +12,7 @@
 // import scanner class from the java.util package
 import java.util.Scanner;
 // class declaration
-class average {
+class Average {
   // main method
   public static void main(String[] args){
     // create scanner object to read input 
