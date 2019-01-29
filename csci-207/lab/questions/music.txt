@@ -1,0 +1,17 @@
+Write a program that takes the following music playlist and shuffles and plays 10 songs from the list. You must use a 1-D array to store and access songs. 
+The program must randomly play each song by printing the song’s title. No song may be played more than once.
+ Sunflower
+ Without Me
+ Thank U, Next
+ Sicko Mode
+ High Hopes
+ Happier
+ Girls Like You
+ Drip Too Hard
+ Eastside
+ Zeze
+ Wow
+ Wake Up in the Sky
+ Better Now
+ Mo Bamba
+ Breathin
