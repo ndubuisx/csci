@@ -3,7 +3,7 @@
  * dollars, quarters, dimes, nickels, and pennies.
  *
  * @author Emmanuel Ndubuisi 
- * @version jan 15, 2019
+ * @version Jan 15, 2019
  */
 
 // todo: add comments
