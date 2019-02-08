@@ -1,6 +1,6 @@
 import java.util.Scanner;
-// todo: add comments, handle exceptions
-class MineWalker {
+// todo: add comments
+class Main {
   // instance variables
   public static char[][] field = new char[5][10];
   public static int pos_x, pos_y = 0;
@@ -59,36 +59,55 @@ class MineWalker {
   public static void play(int control){
     switch(control){
       case 1:
-        field[pos_x][pos_y] = '_';
-        if(checkForLose((pos_x-1), pos_y)){
-          lose = checkForLose((pos_x-1), pos_y);
-        }else{
-          field[(--pos_x)][pos_y] = '0';
+        try{
+          field[pos_x][pos_y] = '_';
+          if(checkForLose((pos_x-1), pos_y)){
+            lose = checkForLose((pos_x-1), pos_y);
+          }else{
+            field[(--pos_x)][pos_y] = '0';
+          }
+        }catch(ArrayIndexOutOfBoundsException exception){
+          lose = true;
         }
+        break;
       case -1:
-        field[pos_x][pos_y] = '_';
-        if(checkForLose((pos_x+1), pos_y)){
-          lose = checkForLose((pos_x+1), pos_y);
-        }else{
-          field[(++pos_x)][pos_y] = '0';
+        try{
+          field[pos_x][pos_y] = '_';
+          if(checkForLose((pos_x+1), pos_y)){
+            lose = checkForLose((pos_x+1), pos_y);
+          }else{
+            field[(++pos_x)][pos_y] = '0';
+          }
+          break;
+        }catch(ArrayIndexOutOfBoundsException exception){
+          lose = true;
         }
-        break;
       case 2:
-        field[pos_x][pos_y] = '_';
-        if(checkForLose(pos_x, (pos_y-1))){
-          lose = checkForLose(pos_x, (pos_y-1));
-        }else{
-          field[pos_x][(--pos_y)] = '0';
+        try{
+          field[pos_x][pos_y] = '_';
+          if(checkForLose(pos_x, (pos_y-1))){
+            lose = checkForLose(pos_x, (pos_y-1));
+          }else{
+            field[pos_x][(--pos_y)] = '0';
+          }
+          break;
+        }catch(ArrayIndexOutOfBoundsException exception){
+          lose = true;
         }
-        break;
       case -2:
-        field[pos_x][pos_y] = '_';
-        if(checkForLose(pos_x, (pos_y+1))){
-          lose = checkForLose(pos_x, (pos_y+1));
-        }else{
-          field[pos_x][(++pos_y)] = '0';
+        try{
+          field[pos_x][pos_y] = '_';
+          if(checkForLose(pos_x, (pos_y+1))){
+            lose = checkForLose(pos_x, (pos_y+1));
+          }else{
+            field[pos_x][(++pos_y)] = '0';
+          }
+          break;
+        }catch(ArrayIndexOutOfBoundsException exception){
+          lose = true;
         }
-        break;
+      default:
+        lose = true;
     }
     printBoard();
   }
