@@ -1,6 +1,17 @@
+/****************************************************************************** 
+ * Lab 3 - MineWalker
+ * 
+ * A game where a player (X) is trying to get an ice cream cone (^) in a mine field
+ * Author: Emmanuel Ndubuisi
+ * Date: February 4, 2019
+ * 
+ * Compilation:  javac MineWalker.java
+ * Execution:    java MineWalker
+ ******************************************************************************/
+
 import java.util.*;
 // todo: add comments
-class Main {
+class MineWalker {
   // instance variables
   public static char[][] field = new char[5][10];
   // pos_x = row index, pos_y = column index
