@@ -1,3 +1,13 @@
+/****************************************************************************** 
+ * Lab 5 - RPS
+ * 
+ * Rock, Paper, Scissors game.
+ * Author: Emmanuel Ndubuisi
+ * Date: April 8, 2019
+ * 
+ * Compilation:  javac RPS.java
+ * Execution:    java RPS
+ ******************************************************************************/
 import java.util.Scanner;
 public class RPS{
 	public static void main(String[] args){
