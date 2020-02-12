@@ -1,4 +1,4 @@
-# CS Assessments at Claflin University and South Carolina State University
+# CS @ Claflin University and South Carolina State University
 
 - Fundamentals of Programming (CSCI 206) taught by Ms. Natasha Delahaunt
   - Textbook Required: [Java How to Program (11th Edition, 2018)](https://www.amazon.com/Java-Program-Early-Objects-Deitel/dp/0134743350/)
