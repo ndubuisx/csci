@@ -21,6 +21,6 @@ withdraw (account, amount):
 ```
  
 
-Separate thread for each person to do withdrawals and these threads run on the same bank machine. &nbsp;
-a) Implement the above problem with the choice of your programming language? (7 points) &nbsp;
+Separate thread for each person to do withdrawals and these threads run on the same bank machine.\
+a) Implement the above problem with the choice of your programming language? (7 points)\
 b) Explain what’s the problem with this implementation? (3 points)
