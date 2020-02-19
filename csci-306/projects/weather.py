@@ -3,13 +3,22 @@
 Emmanuel Ndubuisi
 CSCI 306
 Project 1 - Weather.py
-January 18, 2019
+February 18, 2020
 
 """
-	
+
 class Weather:
-	def __init__(self, weather):
-		self.previous_week_weather = weather
+	def __init__(self):
+		self.previous_week_weather = {}
+		
+	def getUserInput(self):
+		# get user input and assign to previous_week_weather
+		days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+		
+		for day in days_of_week:
+			usr_input = input("Enter the weather for %s: " % (day))
+			self.previous_week_weather[day] = usr_input
+		
 	
 	def getHighestTemp(self):
 		highest = float('-inf')
@@ -45,12 +54,6 @@ class Weather:
 		print "Average temperature: ", self.getAverageTemp()
 
 if __name__ == "__main__":
-	previous_week_weather = {}
-	days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-	
-	for day in days_of_week:
-		usr_input = input("Enter the weather for %s: " % (day))
-		previous_week_weather[day] = usr_input
-	
-	weather = Weather(previous_week_weather)
+	weather = Weather()
+	weather.getUserInput()
 	weather.printResult()
