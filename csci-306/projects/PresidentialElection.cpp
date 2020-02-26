@@ -1,5 +1,9 @@
 /** 
-Source: https://www.rollingstone.com/politics/politics-lists/2020-democratic-candidates-issues-policy-positions-820811/
+* Emmanuel Ndubuisi
+* CSCI 306
+* Project 2 - PresidentialElection.cpp
+* February 26, 2020
+* Source: https://www.rollingstone.com/politics/politics-lists/2020-democratic-candidates-issues-policy-positions-820811/
 **/
 
 #include <map>
