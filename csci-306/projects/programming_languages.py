@@ -3,7 +3,7 @@ class ProgrammingLanguages:
     argument = output or input_ or comment or loop
 
     if (argument == output):
-      return f'print(\'{output}\')'
+      return f'print(\'{output}\\n\')'
     elif (argument == input_):
       if (input_ == 'integer' or input_ == 'int'):
         return 'x = int(input())'
@@ -12,7 +12,7 @@ class ProgrammingLanguages:
     elif (argument == comment):
       return f'# {comment}'
     elif (argument == loop):
-      return f'for i in range({loop[0]}):\n\tprintf(\'{loop[1]}\')'
+      return f'for i in range({loop[0]}):\n\tprintf(\'{loop[1]}\\n\')'
     else:
       return False
 
@@ -20,7 +20,7 @@ class ProgrammingLanguages:
     argument = output or input_ or comment or loop
 
     if (argument == output):
-      return f'\tprintf(\'{output}\');'
+      return f'\tprintf(\"{output}\\n");'
     elif (argument == input_):
       if (input_ == 'integer' or input_ == 'int'):
         return '\tint i;\n\tcin >> i;'
@@ -29,7 +29,7 @@ class ProgrammingLanguages:
     elif (argument == comment):
       return f'\t// {comment}'
     elif (argument == loop):
-      return '\tfor (int i = 0; i < %d; i++) { \n\t printf(\'%s\'); \n\t}' % (loop[0], loop[1])
+      return '\tfor (int i = 0; i < %d; i++) { \n\t printf(\"%s\\n"); \n\t}' % (loop[0], loop[1])
     else:
       return False
 
@@ -37,7 +37,7 @@ class ProgrammingLanguages:
     argument = output or input_ or comment or loop
 
     if (argument == output):
-      return f'\tprintf(\'{output}\');'
+      return f'\tprintf(\"{output}\\n\");'
     elif (argument == input_):
       if (input_ == 'integer' or input_ == 'int'):
         return '\tint i;\n\tscanf("%d", &i);'
@@ -46,7 +46,7 @@ class ProgrammingLanguages:
     elif (argument == comment):
       return f'\t// {comment}'
     elif (argument == loop):
-      return '\tfor (int i = 0; i < %d; i++) { \n\t printf(\'%s\'); \n\t}' % (loop[0], loop[1])
+      return '\tfor (int i = 0; i < %d; i++) { \n\t printf(\"%s\\n\"); \n\t}' % (loop[0], loop[1])
     else:
       return False
 
@@ -80,7 +80,7 @@ if __name__ == "__main__":
         end_program = True
     print(result)   
   elif (language_option.lower() == 'b'):
-    result = result + 'int main() { \n'
+    result = result + '#include <iostream>\nusing namespace std;\n\nint main() { \n'
     while (not end_program):
       prompt = int(input('Choose an option – 1: Output, 2: Input, 3: Comment, 4: Create a Loop, 5: End program: \n'))
 
@@ -103,7 +103,7 @@ if __name__ == "__main__":
         end_program = True
     print(result)
   elif (language_option.lower() == 'c'):
-    result = result + 'int main() { \n'
+    result = result + '#include <stdio.h>\n\nint main() { \n'
     while (not end_program):
       prompt = int(input('Choose an option – 1: Output, 2: Input, 3: Comment, 4: Create a Loop, 5: End program: \n'))
 
