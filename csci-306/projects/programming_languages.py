@@ -29,7 +29,7 @@ class ProgrammingLanguages:
     elif (argument == comment):
       return f'\t// {comment}'
     elif (argument == loop):
-      return '\tfor (int i = 0; i < %d; i++){ \n\t printf(\'%s\'); \n\t}' % (loop[0], loop[1])
+      return '\tfor (int i = 0; i < %d; i++) { \n\t printf(\'%s\'); \n\t}' % (loop[0], loop[1])
     else:
       return False
 
@@ -46,7 +46,7 @@ class ProgrammingLanguages:
     elif (argument == comment):
       return f'\t// {comment}'
     elif (argument == loop):
-      return '\tfor (int i = 0; i < %d; i++){ \n\t printf(\'%s\'); \n\t}' % (loop[0], loop[1])
+      return '\tfor (int i = 0; i < %d; i++) { \n\t printf(\'%s\'); \n\t}' % (loop[0], loop[1])
     else:
       return False
 
