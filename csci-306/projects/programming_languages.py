@@ -12,7 +12,7 @@ class ProgrammingLanguages:
     elif (argument == comment):
       return f'# {comment}'
     elif (argument == loop):
-      return f'for i in range({loop[0]}):\n\tprintf(\'{loop[1]}\\n\')'
+      return f'for i in range({loop[0]}):\n\tprint(\'{loop[1]}\\n\')'
     else:
       return False
 
