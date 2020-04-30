@@ -29,7 +29,7 @@ class ProgrammingLanguages:
     elif (argument == comment):
       return f'\t// {comment}'
     elif (argument == loop):
-      return '\tfor (int i = 0; i < %d; i++){ \n\t printf(%s); \n\t}' % (loop[0], loop[1])
+      return '\tfor (int i = 0; i < %d; i++){ \n\t printf(\'%s\'); \n\t}' % (loop[0], loop[1])
     else:
       return False
 
@@ -46,7 +46,7 @@ class ProgrammingLanguages:
     elif (argument == comment):
       return f'\t// {comment}'
     elif (argument == loop):
-      return '\tfor (int i = 0; i < %d; i++){ \n\t printf(%s); \n\t}' % (loop[0], loop[1])
+      return '\tfor (int i = 0; i < %d; i++){ \n\t printf(\'%s\'); \n\t}' % (loop[0], loop[1])
     else:
       return False
 
@@ -99,7 +99,7 @@ if __name__ == "__main__":
         loop_argument = [loop_count, loop_output]
         result = result + pl.cpp(None, None, None, loop_argument) + '\n'
       elif (prompt == 5):
-        result = result + '}'
+        result = result + '\treturn 0;\n}'        
         end_program = True
     print(result)
   elif (language_option.lower() == 'c'):
@@ -122,7 +122,7 @@ if __name__ == "__main__":
         loop_argument = [loop_count, loop_output]
         result = result + pl.c(None, None, None, loop_argument) + '\n'
       elif (prompt == 5):
-        result = result + '}'
+        result = result + '\treturn 0;\n}'
         end_program = True
     
     print(result)
