@@ -1,0 +1,23 @@
+Enter filename: dfa.txt
+
+Enter string to test against DFA: ab
+Trace of the transitions through the machine: 0a1 1b2 
+Rejected.
+
+Enter string to test against DFA: bbbaa
+Trace of the transitions through the machine: 0b0 0b0 0b0 0a1 1a1 
+Accepted.
+
+Enter string to test against DFA: abab
+Trace of the transitions through the machine: 0a1 1b2 2a2 2b2 
+Rejected.
+
+Enter string to test against DFA: aaa
+Trace of the transitions through the machine: 0a1 1a1 1a1 
+Accepted.
+
+Enter string to test against DFA: ba
+Trace of the transitions through the machine: 0b0 0a1 
+Accepted.
+
+Enter string to test against DFA: quit
