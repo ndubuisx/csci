@@ -45,7 +45,6 @@ public:
     void checkDFAInput(string str);
 };
 
-// constructor - creates an instance of DFASimulator with file input
 DFASimulator::DFASimulator(string filename)
 {
     this->filename = filename;
